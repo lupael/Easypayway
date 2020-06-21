@@ -1,5 +1,8 @@
 # Easypayway
 Easy Pay Way Payment Gateway
+
+Compatible with WooCommerce 4.2.0
+
 == Description ==
 
 This is the EasyPayWay payment gateway for WooCommerce. Allows you to use EasyPayWay payment gateway with the WooCommerce plugin. EasyPayWay is a Bangladeshi Payment Gateway.
