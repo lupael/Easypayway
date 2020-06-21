@@ -280,7 +280,7 @@ function woocommerce_easypayway_init() {
                 'desc' =>  $desc,
                 'ship_city' => $order -> shipping_city,
                 'ship_postcode' => $order -> shipping_postcode);
-                //'signature_key' => '4590b0f82da65e72e3228fff8c646513'
+               
             $easypayway_args_array = array();
             foreach($easypayway_args as $key => $value){
                 $easypayway_args_array[] = "<input type='hidden' name='$key' value='$value'/>";
