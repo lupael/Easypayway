@@ -4,7 +4,9 @@ Plugin Name: WooCommerce EasyPayWay A Bangladeshi Payment Gateway
 Plugin URI: http://www.easypayway.com/
 Description: Extends WooCommerce EasyPayWay A Bangladeshi Payment Gateway.
 Version: 1.0.0
-Author: Jm Redwan
+Author: Jm Redwan and modifying by Lupael
+
+
 
 
     Copyright: © 2009-2013 JMRedwan.
@@ -39,7 +41,7 @@ function woocommerce_easypayway_init() {
             // Go wild in here
             $this -> id = 'easypayway';
             $this -> method_title = __('EasyPayWay', 'Redwan');
-            $this -> icon = WP_PLUGIN_URL . "/" . plugin_basename(dirname(__FILE__)) . '/images/EasyPayWay.png';
+            $this -> icon = WP_PLUGIN_URL . "/" . plugin_basename(dirname(__FILE__)) . '/EasyPayWay.png';
             $this -> has_fields = false;
             $this -> init_form_fields();
             $this -> init_settings();
