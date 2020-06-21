@@ -1,3 +1,12 @@
+=== Plugin Name ===
+Contributors: JM Redwan and Lupael email : lupaels@gmail.com
+Tags: WooCommerce, Payment Gateway, EasyPayWay,payment gateway, payment gateways,  payments gateway, online payment gateway, payment gateway comparison, collections software,  payment gateway providers, best payment gateway, ecommerce payment gateway, internet payment gateway, mastercard payment gateway, payment gateway software,payment gateway in bangladesh,
+Requires at least: 3.3
+Tested up to: 4.2.0
+Stable tag: 1.2.2
+License: GPLv2 or later
+EasyPayWay is a Bangladeshi Payment Gateway with the WooCommerce plugin.
+
 # Easypayway
 Easy Pay Way Payment Gateway
 
@@ -14,6 +23,13 @@ This is the EasyPayWay payment gateway for WooCommerce. Allows you to use EasyPa
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 
+== Screenshots ==
+1. WooCommerce payment gateway setting page
+2. EasyPayWay setting page
+3. Success message
+4. Info message if the payment for this transaction has been made by an American Express Card
+5. Transaction declined Message
+6. EasyPayWay Payment gateway option at the checkout page
 
 
 == Configuration ==
