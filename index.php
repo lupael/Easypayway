@@ -48,11 +48,12 @@ function woocommerce_easypayway_init() {
             $this -> title = $this -> settings['title'];
             $this -> description = $this -> settings['description'];
             $this -> merchant_id = $this -> settings['merchant_id'];
-            $this -> signature_key = '4590b0f8*******************';
+            //$this -> signature_key = '4590b0f8*******************';
             $this -> redirect_page_id = $this -> settings['redirect_page_id'];
 			//$this -> fail_page_id = $this -> settings['fail_page_id'];
-            $this -> liveurl = 'https://securepay.easypayway.com/payment/index.php';
-            $this -> msg['message'] = "";
+            //$this -> liveurl = 'https://securepay.easypayway.com/payment/index.php';
+            $this -> liveurl = 'https://www.easypayway.com/secure_pay/paynow.php';
+		$this -> msg['message'] = "";
             $this -> msg['class'] = "";
             add_action('init', array(&$this, 'check_easypayway_response'));
             //update for woocommerce >2.0
@@ -89,7 +90,7 @@ function woocommerce_easypayway_init() {
                 'merchant_id' => array(
                     'title' => __('Merchant ID', 'Redwan'),
                     'type' => 'text',
-                    'description' => __('This id(USER ID) available at "Generate Working Key" of "Settings and Options at easypayway."')),
+                    'description' => __('This id(USER ID) available at "Generate Working Key" of "Settings and Options at easypayway https://easypayway.com/merchant/account_website.php."')),
                 'fail_page_id' => array(
                     'title' => __('Return Page Fail'),
                     'type' => 'select',
@@ -256,7 +257,7 @@ function woocommerce_easypayway_init() {
            // $checksum = $this -> getCheckSum($this -> merchant_id, $order -> order_total, $order_id, $redirect_url);
             $easypayway_args = array(
                 'store_id' => $this -> merchant_id,
-                'signature_key' => $this -> signature_key,
+                //'signature_key' => $this -> signature_key,
                 'amount' => $order -> order_total,
 				'currency' =>	get_option('woocommerce_currency'),
                 'tran_id' => $order_id,
